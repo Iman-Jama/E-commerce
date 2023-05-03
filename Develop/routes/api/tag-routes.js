@@ -6,7 +6,9 @@ const { Tag, Product, ProductTag } = require('../../models');
   // be sure to include its associated Product data
   router.get('/', async (req, res) => {
     try {
-      const TagData = await Tag.findAll();
+      const TagData = await Tag.findAll({
+        include: [{ model: Product }],
+      });
       res.status(200).json(TagData);
     } catch (err) {
       res.status(500).json(err);
@@ -45,7 +47,18 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
+  Tag.update(req.body, {
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((updatedTags) => res.json(updatedTags))
+    .catch((err) => {
+      // console.log(err);
+      res.status(400).json(err);
+    });
 });
+
 
 router.delete('/:id', async (req, res) => {
   // delete on tag by its `id` value
