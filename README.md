@@ -6,7 +6,7 @@
   
 
   ## Description:
-  This application id for the backend of an e-commerce website. It allows the user to view the current items in stock, update items, delete items and add items to its current stocklist.
+  This application is for the backend of an e-commerce website. It allows the user to view the current items in stock, update items, delete items and add items to its current stocklist.
   
   
   ## Table of Contents:
