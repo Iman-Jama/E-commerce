@@ -26,7 +26,13 @@
   
   
   ## Usage
-  On opening VSCode and navigating to the javascript file, open the terminal and type in npm start. This will start the server. You can then use the website to navigate to different endpoints and update your stock accordingly.
+  On opening VSCode and navigating to the javascript file, open the terminal and type in npm run seed. This will seed your database. Then type in npm start. This will start the server. You can then use the website to navigate to different endpoints, check current stock and update your stock accordingly.
+
+  ## Screenshot
+  Here is the link to a [video](https://drive.google.com/file/d/1orUuDhBsue97GO92Q6e71Xje1EAIsTVM/view?usp=sharing) which displays how this application works.
+  Here is a screenshot of the application on insomnia:
+
+  ![Final Result](/Develop/images/screenshot.png)
       
   
   ## License

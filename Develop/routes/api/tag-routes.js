@@ -49,7 +49,7 @@ router.put('/:id', (req, res) => {
       id: req.params.id,
     },
   })
-    .then((updatedTags) => res.json(updatedTags))
+    .then((updatedTags) => res.json({message: 'Updated TAG'}))
     .catch((err) => {
       // console.log(err);
       res.status(400).json(err);
@@ -71,7 +71,7 @@ router.delete('/:id', async (req, res) => {
         return;
       }
   
-      res.status(200).json(TagData);
+      res.status(200).json({message: "Its been deleted!"});
     } catch (err) {
       res.status(500).json(err);
     }
