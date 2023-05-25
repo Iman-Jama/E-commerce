@@ -6,30 +6,52 @@
   
 
   ## Description:
-  This application is for the backend of an e-commerce website. It allows the user to view the current items in stock, update items, delete items and add items to its current stocklist.
+  Our e-commerce backend application empowers users to efficiently manage inventory by offering features such as real-time stock tracking, item updates, deletions, and seamless addition of new items to the existing stocklist
   
   
   ## Table of Contents:
   
+  - [Technologies Used](#technologies-used)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contact me](#contact)
+
+  ## Technologies used:
+
+  - **JavaScript:** Used for implementing the backend logic and functionality of our e-commerce application.
+  - **Express.js:** Employed as the web application framework to handle routing and middleware operations for our e-commerce API.
+  - **Node.js:** Utilized as the runtime environment to execute JavaScript code on the server-side for seamless integration with the frontend.
+  - **Sequelize:** Implemented as the Object-Relational Mapping (ORM) library to interact with the MySQL database, simplifying data operations.
+  - **MySQL:** Utilized as the relational database management system for storing and managing e-commerce data.
+  - **.env:** Employed to securely store sensitive configuration variables, such as API keys and database credentials.
   
-  ## Installation
-  You will need to have VSCode and install the following:
-  - Node Js
-  - Express.js
-  - Sequelize
-  - MySQL2
-  
-  
-  
-  ## Usage
-  On opening VSCode and navigating to the javascript file, open the terminal and type in npm run seed. This will seed your database. Then type in npm start. This will start the server. You can then use the website to navigate to different endpoints, check current stock and update your stock accordingly.
+ ## Installation
+
+To get started with the application, follow these steps:
+
+1. Ensure you have Visual Studio Code installed.
+2. Install the following dependencies:
+   - Node.js
+   - Express.js
+   - Sequelize
+   - MySQL2
+
+## Usage
+
+To use the application, follow these steps:
+
+1. Open Visual Studio Code and navigate to the JavaScript file.
+2. In the terminal, run the command `npm run seed` to seed your database.
+3. Next, run the command `npm start` to start the server.
+4. You can now access the website and navigate to different endpoints.
+5. Explore the available features, such as checking the current stock and updating inventory as needed.
+
+By following these steps, you will have the application up and running, allowing you to conveniently manage your e-commerce backend and perform various actions related to stock management.
 
   ## Screenshot
   Here is the link to a [video](https://drive.google.com/file/d/1orUuDhBsue97GO92Q6e71Xje1EAIsTVM/view?usp=sharing) which displays how this application works.
+
   Here is a screenshot of the application on insomnia:
 
   ![Final Result](/Develop/images/screenshot.png)
